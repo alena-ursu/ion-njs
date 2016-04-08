@@ -1,0 +1,25 @@
+# Dependencies
+/api/node_modules
+/app/node_modules
+/api/bower_components
+/app/bower_components
+
+# Project files
+.idea/*
+
+# OS Generated
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ethumbs.db
+Thumbs.db
+
+# Packs
+.dmg
+.zip
+.tar
+.rar
+.iso
+.gz
+
