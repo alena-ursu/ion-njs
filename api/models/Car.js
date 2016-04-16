@@ -7,6 +7,8 @@ var CarSchema = new mongoose.Schema({
     descritpion: String,
     year:        String,
     color:       String,
+    imageSrc:    String,
+    rating:      String,
     performance: Boolean,
     luxury:      Boolean,
 

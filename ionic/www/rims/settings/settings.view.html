@@ -1,0 +1,15 @@
+<ion-view>
+  <ion-nav-title>
+    <i class="rims-icon"></i><span class="rims">RIMS</span> <i ng-click="refresh()" class="icon ion-ios-refresh-empty title-icon"></i>
+  </ion-nav-title>
+  <ion-content padding="true">
+    <h2>Welcome to RIMS</h2>
+    <p>Show off your stuff.</p>
+
+    <ion-list>
+      <ion-item ng-repeat="car in cars" class="item item-icon-right">
+        <span ng-class="{rated: car.done}">{{car.name}}</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

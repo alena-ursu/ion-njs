@@ -1,0 +1,24 @@
+<ion-view  cache-view="false">
+  <ion-nav-title>
+    <i class="rims-icon"></i><span class="rims">RIMS</span>
+  </ion-nav-title>
+  <ion-content padding="true">
+    <ion-refresher pulling-text="Pull to refresh" on-refresh="refresh()">
+    </ion-refresher>
+    <ion-list>
+      <ion-item ng-repeat="car in cars | reverse | limitTo:10" class="car-item item">
+        <span ng-class="{rated: car.done}" class="car-item-title">{{car.name}}
+          <span class="stars">
+            <i class="icon ion-ios-star" ng-repeat="s in range(car.rating)"></i><i class="icon ion-ios-star-outline" ng-repeat="s in range(5 - car.rating)"></i>
+          </span>
+        </span>
+        <div class="car-content row">
+          <div ng-if="car.imageSrc" class="car-img" ng-style="{backgroundImage: 'url(img/{{car.imageSrc}})' }"></div>
+          <!--<div class="car-details">-->
+            <!--<h2>asdasd</h2>-->
+          <!--</div>-->
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
