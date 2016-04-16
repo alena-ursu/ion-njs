@@ -1,7 +1,7 @@
 {
-  "name": "client",
-  "version": "1.1.1",
-  "description": "client: An Ionic project",
+  "name": "RIMS",
+  "version": "1.0.0",
+  "description": "RIMS Ionic Client",
   "dependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
